@@ -1,3 +1,6 @@
+let available = 10;
+let order = 5;
+
 function checkStorage(available, ordered) {
   let message;
   // Change code below this line
@@ -9,5 +12,6 @@ function checkStorage(available, ordered) {
   }
 
   // Change code above this line
-  return message;
+    return message;
 }
+
