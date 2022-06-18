@@ -14,13 +14,3 @@ const exchenge = {
 console.log(exchenge);
 
 exchenge.age = 27;
-
-console.log(exchenge);
-
-
-// проверка 
-
-const clients = ["Таня", "Саша", "Ника", "Ваня"];
-for (let i = 0; 0 < clients.length; i += 1) {
-  console.log(i)
-}
