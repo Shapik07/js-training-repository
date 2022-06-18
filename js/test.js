@@ -5,12 +5,14 @@ console.log("Я учу JS");
 
 //Изменение значения const
 
-const exchenge = {
-  name: "Ivan",
-  lastName: "Shapovalov",
-  age: 26,
-};
+// const exchenge = {
+//   name: "Ivan",
+//   lastName: "Shapovalov",
+//   age: 26,
+// };
 
-console.log(exchenge);
+// console.log(exchenge);
 
-exchenge.age = 27;
+// exchenge.age = 27;
+
+// проверка
