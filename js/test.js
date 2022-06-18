@@ -21,6 +21,6 @@ console.log(exchenge);
 // проверка 
 
 const clients = ["Таня", "Саша", "Ника", "Ваня"];
-const lastElementIndex = clients.length -1;
-console.log(lastElementIndex); 
-console.log(clients[lastElementIndex]); 
+for (let i = 0; 0 < clients.length; i += 1) {
+  console.log(i)
+}
