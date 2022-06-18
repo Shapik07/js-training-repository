@@ -17,14 +17,3 @@ exchenge.age = 27;
 
 console.log(exchenge);
 
-
-// Попытка сделать ДЗ 
-
-const eye = 'blue';
-const user = 'Ivan';
-let userName = user;
-
-console.log(eye);
-console.log(user);
-console.log(userName);
-
