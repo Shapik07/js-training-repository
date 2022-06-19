@@ -15,3 +15,13 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
+function calculateEngravingPrice(message, pricePerWord) {
+  // Change code below this line
+  const totalPrice = index * pricePerWord;
+  const words = message.split(" ");
+  const index = words.indexOf(words[-1]);
+
+  console.log(words);
+  return totalPrice;
+  // Change code above this line
+}
