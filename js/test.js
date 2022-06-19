@@ -16,13 +16,14 @@ console.log("Я учу JS");
 // exchenge.age = 27;
 
 
-const numbers = [56, 75, 80, 34, 30, 25, 56, 17, 80, 6, 17, 50];
-let smallestNumber = numbers[0];
+const x = 5;
+const y = 10;
+const z = 20;
 
-for (const number of numbers) {
-    if (number < smallestNumber) {
-        smallestNumber = number;
-    }
+function multiply(x, y, z) {
+  return x * y * z;
 }
 
-console.log(smallestNumber)
+let result = multiply (x, y, z)
+
+console.log(result)
