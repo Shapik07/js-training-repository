@@ -16,14 +16,19 @@ console.log("Я учу JS");
 // exchenge.age = 27;
 
 
-const x = 5;
-const y = 10;
-const z = 20;
 
-function multiply(x, y, z) {
-  return x * y * z;
+
+function multiply() {
+  let total = 1;
+
+  for (const argument of arguments) {
+    total *= argument;
+  }
+
+  return total;
 }
 
-let result = multiply (x, y, z)
+console.log(multiply(1, 2, 3)); //  6
+console.log(multiply(1, 2, 3, 4)); //  24
+console.log(multiply(1, 2, 3, 4, 5)); //  120
 
-console.log(result)
