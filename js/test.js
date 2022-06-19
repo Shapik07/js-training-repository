@@ -15,18 +15,16 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-
 function getExtremeElements(array) {
-  const newArray = []
+  const newArray = [];
   for (let i = 0; i < array.length; i += 1) {
-    if (i = array[0]) {
-      const firstElement = array[0]
+    if ((i = array[0])) {
+      const firstElement = array[0];
       console.log(firstElement);
     }
-    
-  // console.log(firs);
-  
-}
+
+    // console.log(firs);
+  }
 }
 
 console.log(getExtremeElements([1, 2, 3, 4, 5]));
