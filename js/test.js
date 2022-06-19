@@ -16,19 +16,13 @@ console.log("Я учу JS");
 // exchenge.age = 27;
 
 
-
-
-function multiply() {
-  let total = 1;
-
-  for (const argument of arguments) {
-    total *= argument;
+const calculatorTotalItem = function (items) {
+  let total = 0;
+  for (const item of items) {
+    total += item;
   }
 
   return total;
 }
 
-console.log(multiply(1, 2, 3)); //  6
-console.log(multiply(1, 2, 3, 4)); //  24
-console.log(multiply(1, 2, 3, 4, 5)); //  120
-
+console.log(calculatorTotalItem([1,3,5,7,9,2,4,6,8,12,10,11]));
