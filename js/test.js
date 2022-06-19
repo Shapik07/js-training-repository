@@ -16,13 +16,19 @@ console.log("Я учу JS");
 // exchenge.age = 27;
 
 
-const calculatorTotalItem = function (items) {
-  let total = 0;
-  for (const item of items) {
-    total += item;
-  }
-
-  return total;
+function getExtremeElements(array) {
+  const newArray = []
+  for (let i = 0; i < array.length; i += 1) {
+    if (i = array[0]) {
+      const firstElement = array[0]
+      console.log(firstElement);
+    }
+    
+  // console.log(firs);
+  
+}
 }
 
-console.log(calculatorTotalItem([1,3,5,7,9,2,4,6,8,12,10,11]));
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
