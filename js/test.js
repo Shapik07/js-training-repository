@@ -15,19 +15,17 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-function makeArray(firstArray, secondArray, maxLength) {
-    const newArray = firstArray.concat(secondArray)
+// // function calculateTotal(number) {
+// //   let result = [];
+// //   let i = 0;
+// //   do {
+// //     i += 1;
+// //     result += i + "";
+// //   } while (i < number);
+    
+// //   console.log(result)
+// }
 
-    if (newArray.length > maxLength) {
-        console.log(newArray.slice(0, maxLength))
-    }
 
-    // console.log(newArray)
-}
 
-makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
-makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
-makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
-makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2);
-makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4);
-makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0);
+
