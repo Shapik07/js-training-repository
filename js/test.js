@@ -15,28 +15,14 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-// // function calculateTotal(number) {
-// //   let result = [];
-// //   let i = 0;
-// //   do {
-// //     i += 1;
-// //     result += i + "";
-// //   } while (i < number);
 
-// //   console.log(result)
-// }
-
-function findLongestWord(string) {
-    let longWord = '';
-    const words = string.split(" ");
-
-    for (const element of words) {
-      
-    if (element.length > longWord.length) {
-        longWord = element;
-    }
-  }console.log(longWord)
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+    for (let i = min; i <= max; i += 1)
+        numbers.push(i)
+    console.log(numbers)
 }
 
-
-findLongestWord("The quick brown fox jumped over the lazy dog");
+createArrayOfNumbers(1, 3);
+createArrayOfNumbers(14, 17);
+createArrayOfNumbers(29, 34);
