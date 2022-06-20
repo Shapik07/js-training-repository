@@ -22,10 +22,21 @@ console.log("Я учу JS");
 // //     i += 1;
 // //     result += i + "";
 // //   } while (i < number);
-    
+
 // //   console.log(result)
 // }
 
+function findLongestWord(string) {
+    let longWord = '';
+    const words = string.split(" ");
+
+    for (const element of words) {
+      
+    if (element.length > longWord.length) {
+        longWord = element;
+    }
+  }console.log(longWord)
+}
 
 
-
+findLongestWord("The quick brown fox jumped over the lazy dog");
