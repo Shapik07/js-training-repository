@@ -15,11 +15,19 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-const fruits = ["apple", "plum", "pear", "orange", "banana"];
+function makeArray(firstArray, secondArray, maxLength) {
+    const newArray = firstArray.concat(secondArray)
 
-// Change code below this line
-const firstTwoEls = fruits.slice(0, 2);
-const nonExtremeEls = fruits.slice(1, -1);
-const lastThreeEls = fruits.slice(-3);
+    if (newArray.length > maxLength) {
+        console.log(newArray.slice(0, maxLength))
+    }
 
-console.log(nonExtremeEls);
+    // console.log(newArray)
+}
+
+makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
+makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
+makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
+makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2);
+makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4);
+makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0);
