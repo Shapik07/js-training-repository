@@ -4,7 +4,6 @@
 
 ------------------- МОДУЛЬ 2 (ЗАДАЧИ) -------------------
 
-
 ===== ЗАДАЧА 21 =====
 
 function findLongestWord(string) {
@@ -19,8 +18,12 @@ longestWord = array[i]
 } console.log(longestWord);
 }
 
-
 ===== ЗАДАЧА 26 =====
 
-
-ЗАДАЧА 26 ()
+function calculateTotalPrice(order) {
+let total = 0;
+for (let element of order) {
+total += element;
+}
+return total;
+}
