@@ -15,22 +15,10 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-function getEvenNumbers(start, end) {
-  let result = [];
-  let array = [];
-
-  for (let j = start; j = end; j += 2) {
-    array.push([j])
-  }
- console.log(array);
-  // for (let i = start; (i = end); i += 1) {
-  //   if (i % 2 === 0) {
-  //     result.push(i);
-  //   }
-    
-  // }
- 
+function includes(array, value) {
+  array.indexOf(value) ? true : false
 }
+console.log(array.indexOf(value));
 
 
-getEvenNumbers(2, 5);
+includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter");
