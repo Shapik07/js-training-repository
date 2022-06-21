@@ -2,16 +2,25 @@
 
 <!-- проверка на комменты (текст не важен) -->
 
-// ЗАДАЧА 21 (МОДУЛЬ 2)
+------------------- МОДУЛЬ 2 (ЗАДАЧИ) -------------------
 
-// function findLongestWord(string) {
 
-// const array = string.split(" ");
-// let longestWord = [0];
+===== ЗАДАЧА 21 =====
 
-// for (let i = 0; i <= array[i].length; i += 1) {
-// if (array[i].length > longestWord.length) {
-// longestWord = array[i]
-// }
-// } console.log(longestWord);
-// }
+function findLongestWord(string) {
+
+const array = string.split(" ");
+let longestWord = [0];
+
+for (let i = 0; i <= array[i].length; i += 1) {
+if (array[i].length > longestWord.length) {
+longestWord = array[i]
+}
+} console.log(longestWord);
+}
+
+
+===== ЗАДАЧА 26 =====
+
+
+ЗАДАЧА 26 ()
