@@ -101,3 +101,32 @@ result.push(i);
 }
 return result;
 }
+
+===== ЗАДАЧА 30 =====
+
+const start = 6;
+const end = 27;
+let number;
+
+for (let i = start; i < end; i += 1) {
+if (i % 5 === 0) {
+number = i;
+break;
+}
+}
+
+===== ЗАДАЧА 31 =====
+
+function findNumber(start, end, divisor) {
+let number;
+
+for (let i = start; i < end; i += 1) {
+if (i % divisor === 0) {
+number = i;
+return number;
+}
+}
+}
+
+===== ЗАДАЧА 32 =====
+
