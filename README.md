@@ -18,6 +18,33 @@ longestWord = array[i]
 } console.log(longestWord);
 }
 
+===== ЗАДАЧА 22 =====
+
+function createArrayOfNumbers(min, max) {
+const numbers = [];
+for (let i = min; i <= max; i += 1)
+numbers.push(i)
+return numbers;
+}
+
+===== ЗАДАЧА 23 =====
+
+function filterArray(numbers, value) {
+const newArray = [];
+for (let element of numbers) {
+if (element > value) {
+newArray.push(element);
+}
+}return newArray;
+}
+
+===== ЗАДАЧА 24 =====
+
+function checkFruit(fruit) {
+const fruits = ["apple", "plum", "pear", "orange"];
+return fruits.includes(fruit) ? true : false;
+}
+
 ===== ЗАДАЧА 25 =====
 
 function getCommonElements(array1, array2) {
