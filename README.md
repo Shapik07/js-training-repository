@@ -69,3 +69,18 @@ total += element;
 }
 return total;
 }
+
+===== ЗАДАЧА 27 =====
+
+function filterArray(numbers, value) {
+const filteredNumbers = [];
+for (let number of numbers) {
+if (number > value) {
+filteredNumbers.push(number);
+}
+}
+return filteredNumbers;
+}
+
+===== ЗАДАЧА 28 =====
+
