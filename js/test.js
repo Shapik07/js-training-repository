@@ -15,18 +15,20 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-function filterArray(numbers, value) {
-  const newArray = [];
-  for (let element of numbers) {
-    if (element > value) {
-      newArray.push(element);
+function getCommonElements(array1, array2) {
+  let newArray = [];
+
+  for (let i = 0; i < array1.length; i += 1) {
+    for (let j = 0; j < array2.length; j += 1) {
+      if (array1[i] === array2[j]) {
+        array2[j].includes;
+        newArray.push(array2[j]);
+      }
     }
   }
-  console.log(newArray);
+  return newArray;
 }
 
-filterArray([1, 2, 3, 4, 5], 3);
-filterArray([1, 2, 3, 4, 5], 4);
-filterArray([1, 2, 3, 4, 5], 5);
-filterArray([12, 24, 8, 41, 76], 38);
-filterArray([12, 24, 8, 41, 76], 20);
+
+getCommonElements([1, 2, 3], [2, 4]);
+
