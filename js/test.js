@@ -15,22 +15,22 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
+function getEvenNumbers(start, end) {
+  let result = [];
+  let array = [];
+
+  for (let j = start; j = end; j += 2) {
+    array.push([j])
+  }
+ console.log(array);
+  // for (let i = start; (i = end); i += 1) {
+  //   if (i % 2 === 0) {
+  //     result.push(i);
+  //   }
+    
+  // }
+ 
+}
 
 
-// getCommonElements([1, 2, 3], [2, 4]);
-
-// const findLongestWord = function (str) {
-//   let arrStr = str.split(" ");
-//   let wordLength = 0;
-//   let longestWord;
-
-//   for (let i = 0; i < arrStr.length; i += 1) {
-//     wordLength = arrStr[1].length;
-
-//     if (arrStr[i].length > wordLength) {
-//       longestWord = arrStr[i];
-
-//       return longestWord;
-//     }
-//   }
-// };
+getEvenNumbers(2, 5);

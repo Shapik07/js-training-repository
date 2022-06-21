@@ -92,3 +92,12 @@ const e = 8 % 3;
 
 ===== ЗАДАЧА 29 =====
 
+function getEvenNumbers(start, end) {
+let result = [];
+for (let i = start; i <= end; i += 1) {
+if (i % 2 === 0) {
+result.push(i);
+}
+}
+return result;
+}
