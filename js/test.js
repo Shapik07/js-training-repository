@@ -15,14 +15,18 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-
-function createArrayOfNumbers(min, max) {
-  const numbers = [];
-    for (let i = min; i <= max; i += 1)
-        numbers.push(i)
-    console.log(numbers)
+function filterArray(numbers, value) {
+  const newArray = [];
+  for (let element of numbers) {
+    if (element > value) {
+      newArray.push(element);
+    }
+  }
+  console.log(newArray);
 }
 
-createArrayOfNumbers(1, 3);
-createArrayOfNumbers(14, 17);
-createArrayOfNumbers(29, 34);
+filterArray([1, 2, 3, 4, 5], 3);
+filterArray([1, 2, 3, 4, 5], 4);
+filterArray([1, 2, 3, 4, 5], 5);
+filterArray([12, 24, 8, 41, 76], 38);
+filterArray([12, 24, 8, 41, 76], 20);
