@@ -130,3 +130,10 @@ return number;
 
 ===== ЗАДАЧА 32 =====
 
+function includes(array, value) {
+for (let element of array) {
+if (element === value) {
+return true
+}
+} return false
+}

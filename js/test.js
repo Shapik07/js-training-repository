@@ -15,10 +15,3 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-function includes(array, value) {
-  array.indexOf(value) ? true : false
-}
-console.log(array.indexOf(value));
-
-
-includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter");
