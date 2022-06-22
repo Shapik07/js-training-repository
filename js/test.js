@@ -14,3 +14,10 @@ console.log("Я учу JS");
 // console.log(exchenge);
 
 // exchenge.age = 27;
+
+let arr = ["Ваня", "Иштван"];
+arr.push("Коля");
+arr.splice(1, 1, "Петя");
+arr.splice(0, 1);
+arr.splice(0, 0, "Маша", "Паша");
+console.log(arr);
