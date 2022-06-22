@@ -14,4 +14,3 @@ console.log("Я учу JS");
 // console.log(exchenge);
 
 // exchenge.age = 27;
-
