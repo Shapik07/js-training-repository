@@ -16,10 +16,14 @@ console.log("Я учу JS");
 // exchenge.age = 27;
 
 
-function showName() {
-  console.log('Вася'); 
+
+function calcSum(numOne, numTwo) {
+  if (numTwo === 1) {
+    return numOne;
+  } else {
+    return numOne * calcSum(numOne, numTwo - 1);
+  }
 }
-setTimeout(showName, 0);
-console.log('Коля')
 
 
+console.log(calcSum(4, 3));
