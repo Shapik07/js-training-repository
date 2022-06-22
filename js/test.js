@@ -15,9 +15,13 @@ console.log("Я учу JS");
 
 // exchenge.age = 27;
 
-let arr = ["Ваня", "Иштван"];
-arr.push("Коля");
-arr.splice(1, 1, "Петя");
-arr.splice(0, 1);
-arr.splice(0, 0, "Маша", "Паша");
-console.log(arr);
+
+function calcSum(numOne, numTwo) {
+  if (numTwo === 1) {
+    return numOne;
+  } else {
+    return numOne * calcSum(numOne, numTwo - 1);
+  }
+}
+
+console.log(calcSum(3, 3));
