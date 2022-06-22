@@ -17,13 +17,29 @@ console.log("Я учу JS");
 
 
 
-function calcSum(numOne, numTwo) {
-  if (numTwo === 1) {
-    return numOne;
-  } else {
-    return numOne * calcSum(numOne, numTwo - 1);
-  }
+// function calcSum(numOne, numTwo) {
+//   if (numTwo === 1) {
+//     return numOne;
+//   } else {
+//     return numOne * calcSum(numOne, numTwo - 1);
+//   }
+// }
+
+
+// console.log(calcSum(4, 3));
+
+
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  rating: 8.38,
+};
+const keys = Object.keys(book);
+
+for (const key of keys) {
+  // Ключ
+  console.log(key);
+  // Значение свойства
+  console.log(book[key]);
 }
-
-
-console.log(calcSum(4, 3));
