@@ -29,17 +29,14 @@ console.log("Я учу JS");
 // console.log(calcSum(4, 3));
 
 
-const book = {
-  title: "The Last Kingdom",
-  author: "Bernard Cornwell",
-  genres: ["historical prose", "adventure"],
-  rating: 8.38,
-};
-const keys = Object.keys(book);
+const temps = [14, -4, 25, 8, 11];
 
-for (const key of keys) {
-  // Ключ
-  console.log(key);
-  // Значение свойства
-  console.log(book[key]);
-}
+// В консоли будет массив
+console.log(temps);
+// ❌ Так не сработает, потому что передаём целый массив
+console.log(Math.max(temps)); // NaN
+
+// В консоли будет набор отдельных чисел
+console.log(...temps);
+// ✅ Распылим коллекцию элементов как отдельные аргументы
+console.log(Math.max(...temps)); // 25
