@@ -29,14 +29,12 @@ console.log("Я учу JS");
 // console.log(calcSum(4, 3));
 
 
-const temps = [14, -4, 25, 8, 11];
+function multiply(firstNumber, secondNumber, ...otherArgs) {
+  console.log(firstNumber); // Значение первого аргумента
+  console.log(secondNumber); // Значение второго аргумента
+  console.log(otherArgs); // Массив остальных аргументов
+}
 
-// В консоли будет массив
-console.log(temps);
-// ❌ Так не сработает, потому что передаём целый массив
-console.log(Math.max(temps)); // NaN
-
-// В консоли будет набор отдельных чисел
-console.log(...temps);
-// ✅ Распылим коллекцию элементов как отдельные аргументы
-console.log(Math.max(...temps)); // 25
+multiply(1, 2);
+multiply(1, 2, 3);
+multiply(1, 2, 3, 4);
