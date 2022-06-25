@@ -28,22 +28,24 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
+const authors = {
+  Veronika: 7,
+  Ivan: 8,
+  Alexandr: 3,
+  Kirill: 5,
+  Tatiana: 12,
+};
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "На берегу спокойных вод",
-    author: "Роберт Шекли",
-    rating: 8.51,
-  },
-];
+const keys = Object.keys(authors);
+let biggestNumber = 0;
 
-for (const book of books) {
-  console.log(book.title);
-  console.log(book.author);
-  console.log(book.rating);
+for (const key of keys) {
+//   console.log(key)
+//   console.log(authors[key])
+  if (authors[key] > biggestNumber) {
+    biggestNumber = authors[key];
+  }
 }
+console.log(biggestNumber);
+
+
