@@ -28,28 +28,16 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-const authors = {
-  Veronika: 7,
-  Ivan: 8,
-  Alexandr: 3,
-  Kirill: 5,
-  Tatiana: 12,
-};
-
-const keys = Object.keys(authors);
-let biggestNumber = 0;
-
-for (const key of keys) {
-//   console.log(key)
-//   console.log(authors[key])
-  if (authors[key] > biggestNumber) {
-    biggestNumber = authors[key];
+function countProps(object) {
+  let propCount = 0;
+  for (const key in object) {
+    if (propCount.hasOwnProperty(key)) {
+      
+    }
   }
+  console.log(propCount)
 }
-console.log(biggestNumber);
 
-
-console.log("JavaScript is awesome".toUpperCase())
-
-
-
+countProps({});
+countProps({ name: "Mango", age: 2 });
+countProps({ mail: "poly@mail.com", isOnline: true, score: 500 });
