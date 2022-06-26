@@ -49,7 +49,7 @@ for (const key of keys) {
 console.log(biggestNumber);
 
 
-console.log("JavaScript is awesome".length)
+console.log("JavaScript is awesome".toUpperCase())
 
 
 
