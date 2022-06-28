@@ -28,18 +28,7 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-function countProps(object) {
-  let propCount = 0;
-  for (const key in object) {
-    if (propCount.hasOwnProperty(key)) {
-      
-    }
-  }
-  console.log(propCount)
+const max = 10;
+for (let i = 0; i < max; i += 1) {
+  console.log(`${max} % ${i} = `, max % i);
 }
-
-countProps({});
-countProps({ name: "Mango", age: 2 });
-countProps({ mail: "poly@mail.com", isOnline: true, score: 500 });
-
-Продолжаю 
