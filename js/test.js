@@ -28,11 +28,21 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-// Change code below this line
-const keys = Object.keys(apartment);
-const values = Object.values(apartment);
+
+
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  const zp = Object.values(salaries);
+
+  for (const money of zp) {
+    totalSalary += money;
+  }
+
+  return totalSalary;
+}
+
+// totalSalary;
+
+countTotalSalary({});
+countTotalSalary({ mango: 100, poly: 150, alfred: 80 });
+countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 });
