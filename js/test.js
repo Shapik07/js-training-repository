@@ -30,19 +30,18 @@ console.log("Я учу JS");
 
 
 
-function countTotalSalary(salaries) {
-  let totalSalary = 0;
-  const zp = Object.values(salaries);
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
 
-  for (const money of zp) {
-    totalSalary += money;
+function getProductPrice(productName) {
+  for (const key of products) {
+    if (key.name === productName) {
+      return key.price;
+    }
   }
-
-  return totalSalary;
+  return null;
 }
-
-// totalSalary;
-
-countTotalSalary({});
-countTotalSalary({ mango: 100, poly: 150, alfred: 80 });
-countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 });
