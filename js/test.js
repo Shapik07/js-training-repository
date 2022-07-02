@@ -38,36 +38,30 @@ const products = [
 ];
 
 function getAllPropValues(propName) {
-
+  let newArray = [];
+  for (const product of products) {
+    if (product(key) === propName) {
+      newArray.push(product[key]);
+    }
+  }
 }
 
 
 
 
+ let newArray = [];
+ for (const product of products) {
+   newArray.push(product.name);
+ }
+ console.log(newArray);
 
 
+  // let newArray = [];
+  // for (const product of products) {
+  //   if (product.key === propName) {
+  //     newArray.push(product[key]);
+  //   }
+  // }
 
+  // console.log(newArray)
 
-
-// const users = [
-//   { name: "Poly", age: 7, mood: "happy" },
-//   { name: "Mango", age: 4, mood: "blissful" },
-//   { name: "Ajax", age: 3, mood: "tired" },
-// ];
-
-// function getAllPropValues(arr, prop) {
-//   for (let i = 0; i < users.length; i += 1) {
-//     let arr = Object.entries(users[i]);
-
-//     users[i] = arr;
-
-//     const index = users[i][0].indexOf(prop);
-//     let newArr = [];
-
-//     newArr.push(users[i][0][1]);
-
-//     console.log(newArr);
-//   }
-
-//   return newArr;
-// }
