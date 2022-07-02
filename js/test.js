@@ -30,22 +30,18 @@ console.log("Я учу JS");
 
 
 
-// ✅ Логически и синтаксически сгруппированные сущности
-const bookShelf = {
-  books: ["The Last Kingdom", "Dream Guardian"],
-  // Это метод объекта
-  getBooks() {
-    console.log(this.books);
-  },
-  // Это метод объекта
-  addBook(bookName) {
-    console.log("Этот метод будет добавлять новую книгу в свойство books");
-  },
-};
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
 
-// Вызовы методов
-bookShelf.getBooks();
-bookShelf.addBook("Новая книга");
+function getAllPropValues(propName) {
+
+}
+
+
 
 
 
