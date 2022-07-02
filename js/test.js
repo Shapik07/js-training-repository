@@ -35,7 +35,7 @@ const bookShelf = {
   books: ["The Last Kingdom", "Dream Guardian"],
   // Это метод объекта
   getBooks() {
-    console.log("Этот метод будет возвращать все книги - свойство books");
+    console.log(this.books);
   },
   // Это метод объекта
   addBook(bookName) {
