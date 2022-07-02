@@ -30,18 +30,48 @@ console.log("Я учу JS");
 
 
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// ✅ Логически и синтаксически сгруппированные сущности
+const bookShelf = {
+  books: ["The Last Kingdom", "Dream Guardian"],
+  // Это метод объекта
+  getBooks() {
+    console.log("Этот метод будет возвращать все книги - свойство books");
+  },
+  // Это метод объекта
+  addBook(bookName) {
+    console.log("Этот метод будет добавлять новую книгу в свойство books");
+  },
+};
 
-function getProductPrice(productName) {
-  for (const key of products) {
-    if (key.name === productName) {
-      return key.price;
-    }
-  }
-  return null;
-}
+// Вызовы методов
+bookShelf.getBooks();
+bookShelf.addBook("Новая книга");
+
+
+
+
+
+
+
+// const users = [
+//   { name: "Poly", age: 7, mood: "happy" },
+//   { name: "Mango", age: 4, mood: "blissful" },
+//   { name: "Ajax", age: 3, mood: "tired" },
+// ];
+
+// function getAllPropValues(arr, prop) {
+//   for (let i = 0; i < users.length; i += 1) {
+//     let arr = Object.entries(users[i]);
+
+//     users[i] = arr;
+
+//     const index = users[i][0].indexOf(prop);
+//     let newArr = [];
+
+//     newArr.push(users[i][0][1]);
+
+//     console.log(newArr);
+//   }
+
+//   return newArr;
+// }
