@@ -137,3 +137,172 @@ return true
 }
 } return false
 }
+
+
+
+------------------- МОДУЛЬ 3 (ЗАДАЧИ) -------------------
+
+===== ЗАДАЧА 1 =====
+
+const apartment = {
+    imgUrl: "https://via.placeholder.com/640x480",
+    descr:  "Spacious apartment in the city center",
+    rating: 4,
+    price: 2153,
+    tags: ["premium", "promoted", "top"]
+};
+
+
+===== ЗАДАЧА 2 =====
+
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+  owner: {
+    name: "Henry",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com"
+  }
+};
+
+
+===== ЗАДАЧА 3 =====
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+};
+
+const aptRating = apartment.rating;
+const aptDescr = apartment.descr;
+const aptPrice = apartment.price;
+const aptTags = apartment.tags;
+
+
+===== ЗАДАЧА 4 =====
+
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+  owner: {
+    name: "Henry",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+
+const ownerName = apartment.owner.name;
+const ownerPhone = apartment.owner.phone;
+const ownerEmail = apartment.owner.email;
+const numberOfTags = apartment.tags.length;
+const firstTag = apartment.tags[0];
+const lastTag = apartment.tags[2];
+
+===== ЗАДАЧА 5 =====
+
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+};
+
+const aptRating = apartment["rating"];
+const aptDescr = apartment["descr"];
+const aptPrice = apartment["price"];
+const aptTags = apartment["tags"];
+
+===== ЗАДАЧА 6 =====
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+  tags: ["premium", "promoted", "top"],
+  owner: {
+    name: "Henry",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+
+apartment.price = 5000;
+apartment.rating = 4.7;
+apartment.owner.name = "Henry Sibola";
+apartment.tags.push ("trusted");
+
+
+===== ЗАДАЧА 7 =====
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4.7,
+  price: 5000,
+  tags: ["premium", "promoted", "top", "trusted"],
+  owner: {
+    name: "Henry Sibola",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+
+apartment.area = 60;
+apartment.rooms = 3;
+apartment.location = {
+  country: "Jamaica",
+  city: "Kingston"
+};
+
+
+===== ЗАДАЧА 8 =====
+
+===== ЗАДАЧА 9 =====
+
+===== ЗАДАЧА 10 =====
+
+===== ЗАДАЧА 11 =====
+
+===== ЗАДАЧА 12 =====
+
+===== ЗАДАЧА 13 =====
+
+===== ЗАДАЧА 14 =====
+
+===== ЗАДАЧА 15 =====
+
+===== ЗАДАЧА 16 =====
+
+===== ЗАДАЧА 17 =====
+
+===== ЗАДАЧА 18 =====
+
+===== ЗАДАЧА 19 =====
+
+===== ЗАДАЧА 20 =====
+
+===== ЗАДАЧА 21 =====
+
+===== ЗАДАЧА 22 =====
+
+===== ЗАДАЧА 23 =====
+
+===== ЗАДАЧА 24 =====
+
+===== ЗАДАЧА 25 =====
+
+===== ЗАДАЧА 26 =====
