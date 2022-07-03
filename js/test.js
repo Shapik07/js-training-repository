@@ -40,8 +40,8 @@ const products = [
 function getAllPropValues(propName) {
   let newArray = [];
   for (const product of products) {
-    if (product(key) === propName) {
-      newArray.push(product[key]);
+    if (product.name === propName) {
+      newArray.push(product.name);
     }
   }
 }
@@ -49,11 +49,12 @@ function getAllPropValues(propName) {
 
 
 
- let newArray = [];
- for (const product of products) {
-   newArray.push(product.name);
- }
- console.log(newArray);
+
+//  let newArray = [];
+//  for (const product of products) {
+//    newArray.push(product.name);
+//  }
+
 
 
   // let newArray = [];
