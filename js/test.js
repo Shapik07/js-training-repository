@@ -47,7 +47,12 @@ function getAllPropValues(propName) {
 }
 
 
-
+const keys = Object.keys(products)
+console.log(keys)
+for (const key of keys) {
+  console.log(key)
+  console.log(products[key])
+}
 
 
 //  let newArray = [];
