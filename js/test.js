@@ -25,11 +25,14 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-function add(...args) {
-  let newArray = 0;
+function addOverNum(firstNumber, ...args) {
+  let total = 0;
+
   for (const arg of args) {
-    newArray += arg;
+    if (firstNumber < arg) {
+      total += arg;
+    }
   }
-  return newArray;
+  return total;
 }
 

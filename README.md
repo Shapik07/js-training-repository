@@ -585,6 +585,17 @@ function add(...args) {
 
 ===== ЗАДАЧА 32 =====
 
+function addOverNum(firstNumber, ...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    if (firstNumber < arg) {
+      total += arg
+    }
+  }
+  return total;
+}
+
 ===== ЗАДАЧА 33 =====
 
 ===== ЗАДАЧА 34 =====
