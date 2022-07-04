@@ -25,10 +25,11 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  return { ...{ completed, category, priority }, ...data };
+function add(...args) {
+  let newArray = 0;
+  for (const arg of args) {
+    newArray += arg;
+  }
+  return newArray;
 }
 

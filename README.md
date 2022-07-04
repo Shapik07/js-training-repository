@@ -575,6 +575,14 @@ return {...{completed, category, priority}, ...data}
 
 ===== ЗАДАЧА 31 =====
 
+function add(...args) {
+  let newArray = 0
+  for (const arg of args) {
+    newArray += arg
+  }
+  return newArray
+}
+
 ===== ЗАДАЧА 32 =====
 
 ===== ЗАДАЧА 33 =====
