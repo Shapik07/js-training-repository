@@ -566,6 +566,13 @@ const finalSettings = {...defaultSettings, ...overrideSettings};
 
 ===== ЗАДАЧА 30 =====
 
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+return {...{completed, category, priority}, ...data}
+}
+
 ===== ЗАДАЧА 31 =====
 
 ===== ЗАДАЧА 32 =====
