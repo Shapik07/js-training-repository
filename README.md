@@ -526,3 +526,39 @@ const { today: { low: lowToday, high: highToday, icon: todayIcon = "https://www.
 
 
 ===== ЗАДАЧА 26 =====
+
+function calculateMeanTemperature(forecast) {
+const {today:{low: todayLow, high: todayHigh}, tomorrow: {low: tomorrowLow, high: tomorrowHigh}} = forecast
+
+  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+}
+
+===== ЗАДАЧА 27 =====
+
+===== ЗАДАЧА 28 =====
+
+===== ЗАДАЧА 29 =====
+
+===== ЗАДАЧА 30 =====
+
+===== ЗАДАЧА 31 =====
+
+===== ЗАДАЧА 32 =====
+
+===== ЗАДАЧА 33 =====
+
+===== ЗАДАЧА 34 =====
+
+===== ЗАДАЧА 35 =====
+
+===== ЗАДАЧА 36 =====
+
+===== ЗАДАЧА 37 =====
+
+===== ЗАДАЧА 38 =====
+
+===== ЗАДАЧА 39 =====
+
+===== ЗАДАЧА 40 =====
+
+===== ЗАДАЧА 41 =====
