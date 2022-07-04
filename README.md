@@ -535,7 +535,18 @@ const {today:{low: todayLow, high: todayHigh}, tomorrow: {low: tomorrowLow, high
 
 ===== ЗАДАЧА 27 =====
 
+const scores = [89, 64, 42, 17, 93, 51, 26];
+const bestScore = Math.max(...scores);
+const worstScore = Math.min(...scores);
+
 ===== ЗАДАЧА 28 =====
+
+const firstGroupScores = [64, 42, 93];
+const secondGroupScores = [89, 14, 51, 26];
+const thirdGroupScores = [29, 47, 18, 97, 81];
+const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+const bestScore = Math.max(...allScores);
+const worstScore = Math.min(...allScores);
 
 ===== ЗАДАЧА 29 =====
 
