@@ -674,4 +674,12 @@ const atTheOldToad = {
 
 ===== ЗАДАЧА 40 =====
 
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  updatePotionName(oldName, newName) {
+   this.potions.splice(this.potions.indexOf(oldName), 1, newName)
+  },
+};
+
 ===== ЗАДАЧА 41 =====
+
