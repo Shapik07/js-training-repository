@@ -25,22 +25,9 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-
-
-
-
 const bookShelf = {
-  books: ["The last kingdom", "The guardian of dreams"],
-  getBooks() {
-    return "Returning all books";
-  },
-  addBook(bookName) {
-    return `Adding book ${bookName}`;
-  },
-  removeBook() {
-    return "Deleting book Red sunset";
-  },
-  updateBook(bookName) {
-    return `Updating book ${bookName} to Dune`;
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    this.books.splice(this.books.indexOf(oldName), 1, newName);
   },
 };

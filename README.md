@@ -632,6 +632,13 @@ const bookShelf = {
 
 ===== ЗАДАЧА 35 =====
 
+const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    this.books.splice(this.books.indexOf(oldName), 1, newName)
+  },
+};
+
 ===== ЗАДАЧА 36 =====
 
 ===== ЗАДАЧА 37 =====
