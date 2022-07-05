@@ -26,5 +26,15 @@ console.log("Я учу JS");
 // console.log(calcSum(4, 3));
 
 const atTheOldToad = {
-  potions: [],
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  getPotions() {
+    return this.potions;
+  },
+};
+
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  addPotion(potionName) {
+    this.potions.push(potionName);
+  },
 };

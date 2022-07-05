@@ -647,7 +647,21 @@ const atTheOldToad = {
 
 ===== ЗАДАЧА 37 =====
 
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+getPotions() {
+  return this.potions
+}
+};
+
 ===== ЗАДАЧА 38 =====
+
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  addPotion(potionName) {
+   this.potions.push(potionName)
+  },
+};
 
 ===== ЗАДАЧА 39 =====
 
