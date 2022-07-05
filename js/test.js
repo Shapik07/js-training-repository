@@ -25,9 +25,6 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-const bookShelf = {
-  books: ["The last kingdom", "Haze", "The guardian of dreams"],
-  updateBook(oldName, newName) {
-    this.books.splice(this.books.indexOf(oldName), 1, newName);
-  },
+const atTheOldToad = {
+  potions: [],
 };

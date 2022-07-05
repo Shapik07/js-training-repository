@@ -641,6 +641,10 @@ const bookShelf = {
 
 ===== ЗАДАЧА 36 =====
 
+const atTheOldToad = {
+  potions: []
+};
+
 ===== ЗАДАЧА 37 =====
 
 ===== ЗАДАЧА 38 =====
