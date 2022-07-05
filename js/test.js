@@ -27,7 +27,7 @@ console.log("Я учу JS");
 
 const atTheOldToad = {
   potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  removePotion(potionName) {
-    this.potions.splice(this.potions.indexOf(potionName), 1);
+  updatePotionName(oldName, newName) {
+    this.potions.splice(this.potions.indexOf(oldName), 1, newName);
   },
 };
