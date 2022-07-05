@@ -27,14 +27,7 @@ console.log("Я учу JS");
 
 const atTheOldToad = {
   potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  getPotions() {
-    return this.potions;
-  },
-};
-
-const atTheOldToad = {
-  potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  addPotion(potionName) {
-    this.potions.push(potionName);
+  removePotion(potionName) {
+    this.potions.splice(this.potions.indexOf(potionName), 1);
   },
 };

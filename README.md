@@ -665,6 +665,13 @@ const atTheOldToad = {
 
 ===== ЗАДАЧА 39 =====
 
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  removePotion(potionName) {
+   this.potions.splice(this.potions.indexOf(potionName), 1)
+  },
+};
+
 ===== ЗАДАЧА 40 =====
 
 ===== ЗАДАЧА 41 =====
