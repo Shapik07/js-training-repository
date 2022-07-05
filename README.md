@@ -613,6 +613,23 @@ function findMatches(firstElement, ...args) {
 
 ===== ЗАДАЧА 34 =====
 
+const bookShelf = {
+  books: ["The last kingdom", "The guardian of dreams"],
+  getBooks() {
+    return "Returning all books";
+  },
+  addBook(bookName) {
+    return `Adding book ${bookName}`;
+  },
+  removeBook() {
+   return "Deleting book Red sunset"
+  },
+  updateBook(bookName) {
+   return `Updating book ${bookName} to Dune`
+  }
+};
+
+
 ===== ЗАДАЧА 35 =====
 
 ===== ЗАДАЧА 36 =====
