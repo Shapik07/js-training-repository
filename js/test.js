@@ -25,14 +25,26 @@ console.log("Я учу JS");
 
 // console.log(calcSum(4, 3));
 
-function addOverNum(firstNumber, ...args) {
-  let total = 0;
 
-  for (const arg of args) {
-    if (firstNumber < arg) {
-      total += arg;
+
+
+
+// Change code below this line
+function findMatches(firstElement, ...args) {
+  const matches = []; // Don't change this line
+  const newArray = [...firstElement, ...args];
+  // console.log(newArray)
+  for (let i = 0; i <= newArray.length; i += 1) {
+    for (let j = 0; j < i; j += 1) {
+      if (newArray[j] === newArray[i]) {
+        matches.push(newArray[j]);
+      }
     }
   }
-  return total;
+  console.log(matches);
 }
 
+findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7);
+findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2);
+findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41);
+findMatches([63, 11, 8, 29], 4, 7, 16);

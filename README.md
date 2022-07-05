@@ -598,6 +598,19 @@ function addOverNum(firstNumber, ...args) {
 
 ===== ЗАДАЧА 33 =====
 
+function findMatches(firstElement, ...args) {
+  const matches = []; 
+  const newArray = [...firstElement, ...args];
+  for (let i = 0; i <= newArray.length; i += 1) {
+    for (let j = 0; j < i; j += 1) {
+      if (newArray[j] === newArray[i]) {
+        matches.push(newArray[j]);
+      }
+    }
+  }
+  return matches;
+}
+
 ===== ЗАДАЧА 34 =====
 
 ===== ЗАДАЧА 35 =====
