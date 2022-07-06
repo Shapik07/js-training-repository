@@ -26,3 +26,20 @@ console.log("Я учу JS");
 // console.log(calcSum(4, 3));
 
 
+
+
+const userInfo = {
+  name: 'Вася',
+  age: 30,
+  'likes js': true
+}
+console.log(userInfo.name)
+
+userInfo.name = 'Лена'
+
+console.log(userInfo.name);
+
+
+
+
+
