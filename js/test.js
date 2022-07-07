@@ -28,19 +28,13 @@ console.log("Я учу JS");
 
 
 
-// Колбэк-функция
-function greet(name) {
-  console.log(`Добро пожаловать ${name}.`);
-}
+const numbers = [5, 10, 15, 20, 25];
 
-// Функция высшего порядка
-function registerGuest(name, callback) {
-  console.log(`Регистрируем гостя ${name}.`);
-  callback(name);
-}
+const logMessage = (number, index) => {
+  console.log(`Индекс ${index}, значение ${number}`);
+};
 
-registerGuest("Манго", greet);
-
+numbers.forEach(logMessage);
 
 
 
