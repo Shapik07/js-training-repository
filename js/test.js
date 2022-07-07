@@ -28,17 +28,18 @@ console.log("Я учу JS");
 
 
 
-const userInfo = {
-  name: 'Вася',
-  age: 30,
-  'likes js': true
+// Колбэк-функция
+function greet(name) {
+  console.log(`Добро пожаловать ${name}.`);
 }
-console.log(userInfo.name)
 
-userInfo.name = 'Лена'
+// Функция высшего порядка
+function registerGuest(name, callback) {
+  console.log(`Регистрируем гостя ${name}.`);
+  callback(name);
+}
 
-console.log(userInfo.name);
-
+registerGuest("Манго", greet);
 
 
 
