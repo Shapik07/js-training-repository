@@ -29,15 +29,14 @@ console.log("Я учу JS");
 
 
 const students = [
-  { name: "Манго", score: 83 },
-  { name: "Поли", score: 59 },
-  { name: "Аякс", score: 37 },
-  { name: "Киви", score: 94 },
-  { name: "Хьюстон", score: 64 },
+  { name: "Манго", courses: ["математика", "физика"] },
+  { name: "Поли", courses: ["информатика", "математика"] },
+  { name: "Киви", courses: ["физика", "биология"] },
 ];
 
-const scores = students.map(student => student.score)
-console.log(scores)
+const arr1 = students.map(student => student.courses)
+const arr2 = students.flatMap(student => student.courses)
 
-
+console.log(arr1)
+console.log(arr2)
 

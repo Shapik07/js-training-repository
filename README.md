@@ -683,3 +683,45 @@ const atTheOldToad = {
 
 ===== ЗАДАЧА 41 =====
 
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  getPotions() {
+    return this.potions;
+  },
+addPotion(newPotion) {
+    const { potions } = this;
+    const { name: newName} = newPotion;
+
+    for (const { name } of potions) {
+      if (name === newName) {
+      return `Error! Potion ${newName} is already in your inventory!`;
+      }
+  }
+  potions.push(newPotion)
+  },
+
+  removePotion(potionName) {
+    const { potions } = this;
+
+for (let i = 0; i < potions.length; i += 1) {
+ if (potionName === potions[i].name) {
+   potions.splice(i, 1);
+    }
+    }
+    return `Potion ${potionName} is not in inventory!`;
+  },
+
+  updatePotionName(oldName, newName) {
+    for(const potion of this.potions) {
+		       if (potion['name'] === oldName) {
+			 potion['name'] = newName;
+		       }
+		    }
+		  }
+  // Change code above this line
+};
