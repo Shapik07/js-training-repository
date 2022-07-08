@@ -28,13 +28,16 @@ console.log("Я учу JS");
 
 
 
-const numbers = [5, 10, 15, 20, 25];
+const students = [
+  { name: "Манго", score: 83 },
+  { name: "Поли", score: 59 },
+  { name: "Аякс", score: 37 },
+  { name: "Киви", score: 94 },
+  { name: "Хьюстон", score: 64 },
+];
 
-const logMessage = (number, index) => {
-  console.log(`Индекс ${index}, значение ${number}`);
-};
-
-numbers.forEach(logMessage);
+const scores = students.map(student => student.score)
+console.log(scores)
 
 
 
