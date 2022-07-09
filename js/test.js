@@ -28,32 +28,20 @@ console.log("Я учу JS");
 
 
 
-const pizzaPalace = {
-  pizzas: ["Ultracheese", "Smoked", "Four meats"],
-  order(pizzaName, onSuccess, onError) {
-    if (this.pizzas.includes(pizzaName)) {
-      return onSuccess(pizzaName);
+function changeEven(numbers, value) {
+  // Change code below this line
+  const newArray = [];
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] % 2 === 0) {
+      newArray.push(numbers[i] + value);
     }
-    return onError(
-      `There is no pizza with a name ${pizzaName} in the assortment.`
-    );
-  },
-};
-// Change code above this line
-
-// Callback for onSuccess
-function makePizza(pizzaName) {
-  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+  }
+  console.log(newArray);
+  // Change code above this line
 }
 
-// Callback for onError
-function onOrderError(error) {
-  return `Error! ${error}`;
-}
 
-// Method calls with callbacks
-pizzaPalace.order("Smoked", makePizza, onOrderError);
-pizzaPalace.order("Four meats", makePizza, onOrderError);
-pizzaPalace.order("Big Mike", makePizza, onOrderError);
-pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+changeEven([1, 2, 3, 4, 5], 10);
+changeEven([2, 8, 3, 7, 4, 6], 10);
 
