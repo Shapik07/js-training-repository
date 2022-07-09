@@ -28,43 +28,32 @@ console.log("Я учу JS");
 
 
 
-const studentss = [
-  { name: "Манго", courses: ["математика", "физика"] },
-  { name: "Поли", courses: ["информатика", "математика"] },
-  { name: "Киви", courses: ["физика", "биология"] },
-];
+const pizzaPalace = {
+  pizzas: ["Ultracheese", "Smoked", "Four meats"],
+  order(pizzaName, onSuccess, onError) {
+    if (this.pizzas.includes(pizzaName)) {
+      return onSuccess(pizzaName);
+    }
+    return onError(
+      `There is no pizza with a name ${pizzaName} in the assortment.`
+    );
+  },
+};
+// Change code above this line
 
-const allCourses = studentss.flatMap(student => student.courses);
-// ['математика', 'физика', 'информатика', 'математика', 'физика', 'биология'];
+// Callback for onSuccess
+function makePizza(pizzaName) {
+  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+}
 
-const uniqueCourses = allCourses.filter(
-  (course, index, array) => array.indexOf(course) === index
-);
+// Callback for onError
+function onOrderError(error) {
+  return `Error! ${error}`;
+}
 
-console.log(uniqueCourses)
-
-
-
-
-const LOW_SCORE = 50;
-const HIGH_SCORE = 80;
-const students = [
-  { name: "Манго", score: 83 },
-  { name: "Поли", score: 59 },
-  { name: "Аякс", score: 37 },
-  { name: "Киви", score: 94 },
-  { name: "Хьюстон", score: 64 },
-];
-
-const best = students.filter(student => student.score >= HIGH_SCORE);
-console.log(best); // Массив объектов с именами Манго и Киви
-
-const worst = students.filter(student => student.score < LOW_SCORE);
-console.log(worst); // Массив с одним объектом Аякс
-
-// В коллбек-функции удобно деструктуризировать свойства объекта
-const average = students.filter(
-  ({score}) => score >= LOW_SCORE && score < HIGH_SCORE
-);
-console.log(average); // Массив объектов с именами Поли и Хьюстон
+// Method calls with callbacks
+pizzaPalace.order("Smoked", makePizza, onOrderError);
+pizzaPalace.order("Four meats", makePizza, onOrderError);
+pizzaPalace.order("Big Mike", makePizza, onOrderError);
+pizzaPalace.order("Vienna", makePizza, onOrderError);
 
