@@ -1232,20 +1232,120 @@ const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
 
 ===== ЗАДАЧА 41 =====
 
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+];
 
+const sortedByAuthorName = [...books].sort((firstElement, secondElement) => firstElement.author.localeCompare(secondElement.author));
+
+const sortedByReversedAuthorName = [...books].sort((firstElement, secondElement) => secondElement.author.localeCompare(firstElement.author));
+
+const sortedByAscendingRating = [...books].sort((miRaiting, maxRating) => miRaiting.rating - maxRating.rating);
+
+const sortedByDescentingRating = [...books].sort((minRating, maxRating) => maxRating.rating - minRating.rating);
 
 ===== ЗАДАЧА 42 =====
 
+const sortByAscendingBalance = users => {
+   const balanceRating = [...users].sort((minBalance, maxBalance) => minBalance.balance - maxBalance.balance)
+   return balanceRating
+};
+
 ===== ЗАДАЧА 43 =====
+
+const sortByDescendingFriendCount = users => {
+   
+   const friends = [...users].sort((minFriends, maxFriends) => maxFriends.friends.length - minFriends.friends.length);
+
+   return friends
+};
 
 ===== ЗАДАЧА 44 =====
 
+const sortByName = users => {
+   const userName = [...users].sort((firstName, secondName) => firstName.name.localeCompare(secondName.name))
+   return userName
+};
+
 ===== ЗАДАЧА 45 =====
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  {
+    title: "The Dreams in the Witch House",
+    author: "Howard Lovecraft",
+    rating: 8.67,
+  },
+];
+const MIN_BOOK_RATING = 8;
+
+const names = [...books]
+.filter(book => book.rating >= MIN_BOOK_RATING)
+.map(names => names.author)
+.sort((a, b) => a.localeCompare(b))
 
 ===== ЗАДАЧА 46 =====
 
+const getNamesSortedByFriendCount = users => {
+   const amountFriends = [...users].sort((minFriends, maxFriends) => minFriends.friends.length - maxFriends.friends.length)
+   const userNames = amountFriends.map(name => name.name)
+   return userNames
+};
+
 ===== ЗАДАЧА 47 =====
+
+const getSortedFriends = users => {
+   const allFriends = [...users].flatMap(user => user.friends)
+
+   const uniqueFriends = allFriends.filter((friend, index, array) => array.indexOf(friend) === index)
+
+   const nameIsOrder =  uniqueFriends.sort()
+
+   return nameIsOrder
+};
 
 ===== ЗАДАЧА 48 =====
 
+const getTotalBalanceByGender = (users, gender) => {
 
+   const userGenred = [...users].filter(peopleGenred => peopleGenred.gender === gender)
+
+   const userBalance = userGenred.flatMap(peopleMoney => peopleMoney.balance)
+
+   const overallBalance = userBalance.reduce((previousValue, balance) => {
+       return previousValue + balance
+   }, 0)
+
+   return overallBalance
+};
