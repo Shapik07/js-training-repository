@@ -1124,27 +1124,115 @@ const eachElementInThirdIsOdd = thirdArray.every((value) => value % 2 !== 0);
 
 ===== ЗАДАЧА 31 =====
 
-
+const isEveryUserActive = (users) => {
+    const activeUsers = users.every(user => user.isActive)
+    return activeUsers
+};
 
 ===== ЗАДАЧА 32 =====
 
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+
+const anyElementInFirstIsEven = firstArray.some(element => element % 2 === 0);
+const anyElementInFirstIsOdd = firstArray.some(element => element % 2 !== 0);
+
+const anyElementInSecondIsEven = secondArray.some(element => element % 2 === 0);
+const anyElementInSecondIsOdd = secondArray.some(element => element % 2 !== 0);
+
+const anyElementInThirdIsEven = thirdArray.some(element => element % 2 === 0);
+const anyElementInThirdIsOdd = thirdArray.some(element => element % 2 !== 0);
+
 ===== ЗАДАЧА 33 =====
+
+const isAnyUserActive = users => {
+   const activeUsers = users.some(user => user.isActive)
+   return activeUsers
+};
 
 ===== ЗАДАЧА 34 =====
 
+const players = {
+  mango: 1270,
+  poly: 468,
+  ajax: 710,
+  kiwi: 244
+};
+const playtimes = Object.values(players);
+
+const totalPlayTime = playtimes.reduce((previousValue, number) => {
+  return previousValue + number
+});
+
+const averagePlayTime = totalPlayTime / playtimes.length;
+
 ===== ЗАДАЧА 35 =====
+
+const players = [
+  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+  { name: "Poly", playtime: 469, gamesPlayed: 2 },
+  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+];
+const totalAveragePlaytimePerGame = players.reduce(
+  (total, player,) => {
+    return total + (player.playtime / player.gamesPlayed);
+  },
+  0
+);
 
 ===== ЗАДАЧА 36 =====
 
+const calculateTotalBalance = users => {
+   return users.reduce((total, user) => total + user.balance, 0)
+};
+
 ===== ЗАДАЧА 37 =====
+
+const getTotalFriendCount = users => {
+   return users.reduce((total, user) => total + user.friends.length, 0)
+};
 
 ===== ЗАДАЧА 38 =====
 
+const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+const authors = [
+  "Tanith Lee",
+  "Bernard Cornwell",
+  "Robert Sheckley",
+  "Fyodor Dostoevsky",
+];
+
+const ascendingReleaseDates = [...releaseDates].sort();
+
+const alphabeticalAuthors = [...authors].sort();
+
 ===== ЗАДАЧА 39 =====
+
+const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
 
 ===== ЗАДАЧА 40 =====
 
+const authors = [
+  "Tanith Lee",
+  "Bernard Cornwell",
+  "Robert Sheckley",
+  "Fyodor Dostoevsky",
+  "Howard Lovecraft",
+];
+
+const authorsInAlphabetOrder = [...authors].sort((a,b) => a.localeCompare(b));
+
+const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
 ===== ЗАДАЧА 41 =====
+
+
 
 ===== ЗАДАЧА 42 =====
 
