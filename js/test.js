@@ -3,7 +3,7 @@
 console.log("Hello world!");
 console.log("Я учу JS");
 
-[
+const users = [
   {
     name: "Moore Hensley",
     email: "moorehensley@indexia.com",
@@ -44,7 +44,7 @@ console.log("Я учу JS");
     name: "Carey Barr",
     email: "careybarr@nurali.com",
     eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
+    friends: ["Jordan Sampson", "Eddie Strong", "Adrian Cross"],
     isActive: true,
     balance: 3951,
     gender: "male",
@@ -53,7 +53,12 @@ console.log("Я учу JS");
     name: "Blackburn Dotson",
     email: "blackburndotson@furnigeer.com",
     eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman"],
+    friends: [
+      "Jacklyn Lucas",
+      "Linda Chapman",
+      "Adrian Cross",
+      "Solomon Fokes",
+    ],
     isActive: false,
     balance: 1498,
     gender: "male",
@@ -69,9 +74,15 @@ console.log("Я учу JS");
   },
 ];
 
-
-const calculateTotalBalance = (users) => {
-  users.reduce((total, user) => {
-    return total + user.balance;
-  }, 0);
+// Change code below this line
+const getSortedFriends = users => {
+  const allFriends = [...users].flatMap(user => user.friends)
+   const uniqueFriends = allFriends.filter((friend, index, array) => {
+       array.indexOf(friend) === index
+   })
+   const namesIsOrder = uniqueFriends.sort((firstFriend, secondFriend) => secondFriend.localeCompare(firstFriend))
+   
+   return namesIsOrder
 };
+
+// Change code above this line
