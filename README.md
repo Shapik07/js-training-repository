@@ -1005,25 +1005,126 @@ const uniqueGenres = allGenres.filter((genres, index, array) => array.indexOf(ge
 
 ===== ЗАДАЧА 21 =====
 
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+];
+
+const MIN_RATING = 8;
+const AUTHOR = "Bernard Cornwell";
+
+const topRatedBooks = books.filter (book => book.rating >= MIN_RATING);
+const booksByAuthor = books.filter (book => book.author === AUTHOR);
+
 ===== ЗАДАЧА 22 =====
+
+const getUsersWithEyeColor = (users, color) => {
+ const userEye = users.filter(user => user.eyeColor === color)
+return userEye
+};
 
 ===== ЗАДАЧА 23 =====
 
+const getUsersWithAge = (users, minAge, maxAge) => {
+ const userAge = users.filter(user => user.age >= minAge && user.age <= maxAge)
+return userAge
+};
+
 ===== ЗАДАЧА 24 =====
+
+const getUsersWithFriend = (users, friendName) => {
+   const friendNames = users.filter(user => user.friends.includes(friendName))
+   return friendNames
+};
 
 ===== ЗАДАЧА 25 =====
 
+const getFriends = (users) => {
+   const userFriends = users.flatMap(user => user.friends)
+   const uniqueFriends = userFriends.filter((friend, index, array) => array.indexOf(friend) === index)
+   return uniqueFriends
+};
+
 ===== ЗАДАЧА 26 =====
+
+const getActiveUsers = (users) => {
+   const activeUsers = users.filter(user => user.isActive === true)
+   return activeUsers
+};
 
 ===== ЗАДАЧА 27 =====
 
+const getInactiveUsers = (users) => {
+   const notActiveUsers = users.filter(user => user.isActive !== true)
+   return notActiveUsers
+};
+
 ===== ЗАДАЧА 28 =====
+
+const books = [
+  {
+    title: 'The Last Kingdom',
+    author: 'Bernard Cornwell',
+    rating: 8.38,
+  },
+  {
+    title: 'Beside Still Waters',
+    author: 'Robert Sheckley',
+    rating: 8.51,
+  },
+  {
+    title: 'The Dream of a Ridiculous Man',
+    author: 'Fyodor Dostoevsky',
+    rating: 7.75,
+  },
+  { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+];
+const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+const AUTHOR = 'Robert Sheckley';
+
+const bookWithTitle = books.find((book) => book.title === BOOK_TITLE);
+const bookByAuthor = books.find((book) => book.author === AUTHOR);
 
 ===== ЗАДАЧА 29 =====
 
+const getUserWithEmail = (users, email) => {
+   const userEmail = users.find((user) => user.email === email)
+   return userEmail
+};
+
 ===== ЗАДАЧА 30 =====
 
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+
+const eachElementInFirstIsEven = firstArray.every((value) => value % 2 === 0);
+const eachElementInFirstIsOdd = firstArray.every((value) => value % 2 !== 0);
+
+const eachElementInSecondIsEven = secondArray.every((value) => value % 2 === 0);
+const eachElementInSecondIsOdd = secondArray.every((value) => value % 2 !== 0);
+
+const eachElementInThirdIsEven = thirdArray.every((value) => value % 2 === 0);
+const eachElementInThirdIsOdd = thirdArray.every((value) => value % 2 !== 0);
+
 ===== ЗАДАЧА 31 =====
+
+
 
 ===== ЗАДАЧА 32 =====
 
