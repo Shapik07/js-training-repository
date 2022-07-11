@@ -870,25 +870,138 @@ const calculateTotalPrice = (orderedItems) => {
 
 ===== ЗАДАЧА 11 =====
 
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
 
+  numbers.forEach(function (number) {
+    if (number > value) {
+      filteredNumbers.push(number);
+    }
+  });
+
+  return filteredNumbers;
+}
 
 ===== ЗАДАЧА 12 =====
 
+const getCommonElements = (firstArray, secondArray) => {
+  const commonElements = [];
+
+  firstArray.forEach((element) => {
+    if (secondArray.includes(element)) {
+      commonElements.push(element);
+    }
+  });
+
+  return commonElements;
+}
+
 ===== ЗАДАЧА 13 =====
+
+function changeEven(numbers, value) {
+  const newArray = [];
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] % 2 === 0) {
+      newArray.push(numbers[i] + value);
+      continue
+    } newArray.push(numbers[i])
+  }
+  return newArray;
+}
 
 ===== ЗАДАЧА 14 =====
 
+const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+const planetsLengths = planets.map(planet => planet.length);
+
 ===== ЗАДАЧА 15=====
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+  {
+    title: "The Dream of a Ridiculous Man",
+    author: "Fyodor Dostoevsky",
+    rating: 7.75,
+  },
+  { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+  { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+];
+
+const titles = books.map(book => book.title);
 
 ===== ЗАДАЧА 16 =====
 
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    genres: ["adventure", "history"],
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    genres: ["fiction"],
+  },
+  {
+    title: "Redder Than Blood",
+    author: "Tanith Lee",
+    genres: ["horror", "mysticism"],
+  },
+];
+
+const genres = books.flatMap(book => book.genres);
+
 ===== ЗАДАЧА 17 =====
+
+const getUserNames = users => {
+    const names = users.map(user => user.name)
+    return names
+  };
 
 ===== ЗАДАЧА 18 =====
 
+const getUserEmails = users => {
+    const emails = users.map(user => user.email)
+    return emails
+  };
+
 ===== ЗАДАЧА 19 =====
 
+const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+
+const evenNumbers = numbers.filter(even => even % 2 === 0);
+const oddNumbers = numbers.filter(odd => odd % 2 !== 0);
+
 ===== ЗАДАЧА 20 =====
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    genres: ["adventure", "history"],
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    genres: ["fiction", "mysticism"],
+  },
+  {
+    title: "Redder Than Blood",
+    author: "Tanith Lee",
+    genres: ["horror", "mysticism", "adventure"],
+  },
+];
+const allGenres = books.flatMap(book => book.genres);
+const uniqueGenres = allGenres.filter((genres, index, array) => array.indexOf(genres) === index);
 
 ===== ЗАДАЧА 21 =====
 
