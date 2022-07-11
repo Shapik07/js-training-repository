@@ -430,6 +430,21 @@ function getProductPrice(productName) {
 
 ===== ЗАДАЧА 19 =====
 
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function getAllPropValues(propName) {
+  let res = []
+  for (const product of products) {
+    product[propName] ? res.push(product[propName]) : null;
+}
+  return res
+}
+
 ===== ЗАДАЧА 20 =====
 
 const products = [
@@ -725,3 +740,210 @@ for (let i = 0; i < potions.length; i += 1) {
 		  }
   // Change code above this line
 };
+
+
+------------------- МОДУЛЬ 3 (ЗАДАЧИ) -------------------
+
+===== ЗАДАЧА 1 =====
+
+function makePizza() {
+  return "Your pizza is being prepared, please wait.";
+}
+
+const result = makePizza();
+const pointer = makePizza;
+
+===== ЗАДАЧА 2 =====
+
+function deliverPizza(pizzaName) {
+  return `Delivering ${pizzaName} pizza.`;
+}
+
+function makePizza(pizzaName) {
+  return `Pizza ${pizzaName} is being prepared, please wait...`;
+}
+
+function makeMessage(pizzaName, callback) {
+return callback(pizzaName)
+}
+
+===== ЗАДАЧА 3 =====
+
+function makePizza(pizzaName, callback) {
+  console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+  callback(pizzaName);
+}
+
+makePizza("Royal Grand", function deliverPizza(pizzaName) {
+  console.log(`Delivering pizza ${pizzaName}.`);
+});
+
+makePizza("Ultracheese", function eatPizza(pizzaName) {
+console.log(`Eating pizza ${pizzaName}`)
+});
+
+===== ЗАДАЧА 4 =====
+
+const pizzaPalace = {
+  pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+  order(pizzaName, onSuccess, onError) {
+    if(this.pizzas.includes(pizzaName)) {
+      return onSuccess(pizzaName)
+    }
+    return onError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+  },
+};
+function makePizza(pizzaName) {
+  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+}
+
+function onOrderError(error) {
+  return `Error! ${error}`;
+}
+
+pizzaPalace.order('Smoked', makePizza, onOrderError);
+pizzaPalace.order('Four meats', makePizza, onOrderError);
+pizzaPalace.order('Big Mike', makePizza, onOrderError);
+pizzaPalace.order('Vienna', makePizza, onOrderError);
+
+===== ЗАДАЧА 5 =====
+
+function calculateTotalPrice(orderedItems) {
+  let totalPrice = 0;
+
+  orderedItems.forEach(function(number,index) {
+    totalPrice += number;
+  });
+
+  return totalPrice;
+}
+
+===== ЗАДАЧА 6 =====
+
+function filterArray(numbers, value) {
+  const filteredNumbers = [];
+
+numbers.forEach(function(number, index) {
+  if(number > value) {
+    filteredNumbers.push(number)
+  }
+})
+
+  return filteredNumbers;
+}
+
+===== ЗАДАЧА 7 =====
+
+function getCommonElements(firstArray, secondArray) {
+  const commonElements = [];
+
+  firstArray.forEach(function(element) {
+    if (secondArray.includes(element)) {
+    commonElements.push(element)
+  }
+})
+
+  return commonElements;
+}
+
+===== ЗАДАЧА 8 =====
+
+const calculateTotalPrice = (quantity, pricePerItem) => {
+  return quantity * pricePerItem;
+}
+
+===== ЗАДАЧА 9 =====
+
+const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
+===== ЗАДАЧА 10 =====
+
+const calculateTotalPrice = (orderedItems) => {
+  let totalPrice = 0;
+
+  orderedItems.forEach((item) => {
+    totalPrice += item;
+  });
+
+  return totalPrice;
+}
+
+===== ЗАДАЧА 11 =====
+
+
+
+===== ЗАДАЧА 12 =====
+
+===== ЗАДАЧА 13 =====
+
+===== ЗАДАЧА 14 =====
+
+===== ЗАДАЧА 15=====
+
+===== ЗАДАЧА 16 =====
+
+===== ЗАДАЧА 17 =====
+
+===== ЗАДАЧА 18 =====
+
+===== ЗАДАЧА 19 =====
+
+===== ЗАДАЧА 20 =====
+
+===== ЗАДАЧА 21 =====
+
+===== ЗАДАЧА 22 =====
+
+===== ЗАДАЧА 23 =====
+
+===== ЗАДАЧА 24 =====
+
+===== ЗАДАЧА 25 =====
+
+===== ЗАДАЧА 26 =====
+
+===== ЗАДАЧА 27 =====
+
+===== ЗАДАЧА 28 =====
+
+===== ЗАДАЧА 29 =====
+
+===== ЗАДАЧА 30 =====
+
+===== ЗАДАЧА 31 =====
+
+===== ЗАДАЧА 32 =====
+
+===== ЗАДАЧА 33 =====
+
+===== ЗАДАЧА 34 =====
+
+===== ЗАДАЧА 35 =====
+
+===== ЗАДАЧА 36 =====
+
+===== ЗАДАЧА 37 =====
+
+===== ЗАДАЧА 38 =====
+
+===== ЗАДАЧА 39 =====
+
+===== ЗАДАЧА 40 =====
+
+===== ЗАДАЧА 41 =====
+
+===== ЗАДАЧА 42 =====
+
+===== ЗАДАЧА 43 =====
+
+===== ЗАДАЧА 44 =====
+
+===== ЗАДАЧА 45 =====
+
+===== ЗАДАЧА 46 =====
+
+===== ЗАДАЧА 47 =====
+
+===== ЗАДАЧА 48 =====
+
+
