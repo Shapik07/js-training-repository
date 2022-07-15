@@ -5,23 +5,32 @@ console.log("Я учу JS");
 
 
 
-const hotel = {
-  username: "Resort hotel",
-  showThis() {
-    const foo = () => {
-      // Стрелки запоминают контекст во время объявления,
-      // из родительской области видимости
-      console.log("this in foo: ", this);
+class Storage {
+
+    getItems() {
+        return this.items
     };
 
-    foo();
-    console.log("this in showThis: ", this);
-  },
-};
+    addItem(newItem) { 
+        this.items.push(newItem)
+    };
 
-hotel.showThis();
-// this in foo: {username: 'Resort hotel', showThis: ƒ}
-// this in showThis: {username: 'Resort hotel',showThis: ƒ}
+      removeItem(itemToRemove) {
+      const deleted = this.items.indexOf(itemToRemove)
+      this.items.splice(deleted, 1)
+    };
+    
+}
+
+
+// Change code above this line
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
 
 
 
