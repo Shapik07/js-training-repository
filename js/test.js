@@ -5,13 +5,17 @@ console.log("Я учу JS");
 
 
 
-const objC = {
-    z: 5
-}
+const article = document.querySelector(".article");
+console.log(article.innerHTML);
 
-console.log(objC)
-console.log(objC.z)
-console.log(objC.hasOwnProperty('z'))
+const title = document.querySelector(".article .title");
+console.log(title.innerHTML);
+
+const text = document.querySelector(".article .text");
+console.log(text.innerHTML);
+
+const link = document.querySelector(".article .link");
+console.log(link.innerHTML);
 
 
 
