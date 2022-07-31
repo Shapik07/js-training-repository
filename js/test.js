@@ -5,30 +5,45 @@ console.log("Я учу JS");
 
 
 
-const listWithId = document.querySelector("#menu");
-listWithId.style.textTransform = "uppercase";
-listWithId.style.fontSize = "24px";
-console.log(listWithId);
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
 
-const listWithClass = document.querySelector(".menu");
-console.log(listWithClass);
-
-const menuItemsByTagName = document.querySelectorAll("li");
-console.log(menuItemsByTagName);
-
-const menuItemsByClass = document.querySelectorAll(".menu-item");
-console.log(menuItemsByClass);
-
-const firstMenuItem = document.querySelector(".menu-item");
-firstMenuItem.style.color = "tomato";
-console.log(firstMenuItem);
-
-
+function lookUpProfile(name, prop) {
+    for (let i = 0; i < contacts.length; i += 1) {
+      if (contacts[i].firstName === name) {
+        if (contacts[i].hasOwnProperty(prop)) {
+          console.log(contacts[i][prop]);
+        } else {
+          console.log("No such property");
+        }
+        } 
+    }
+    console.log("No such contact");
+}
 
 
-
-
-
-
-
-
+lookUpProfile("Bob", "number");
