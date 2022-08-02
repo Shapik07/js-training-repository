@@ -3,14 +3,20 @@
 console.log("Hello world!");
 console.log("Я учу JS");
 
-function sumTwoSmallestNumbers(numbers) {
-  const numOne = Math.min(...numbers);
-  console.log(numOne);
-  const indexNumOne = numbers.indexOf(numOne);
-  console.log(indexNumOne);
-  const newArray = numbers.splice(indexNumOne, 1);
-  const numTwo = Math.min(...numbers);
-  console.log(numOne + numTwo);
+function validatePIN(pin) {
+  const yes = true;
+  const no = false;
+  const a = /^[0-9]+$/.test(pin);
+  if (a && (pin.length === 4 || pin.length === 6)) {
+    console.log("true");
+  } else {
+    console.log("false");
+  }
 }
 
-sumTwoSmallestNumbers([5, 8, 12, 19, 22]);
+validatePIN("12345");
+validatePIN("1111");
+validatePIN("1234");
+validatePIN("a234");
+
+
