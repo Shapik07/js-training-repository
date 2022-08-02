@@ -3,18 +3,17 @@
 console.log("Hello world!");
 console.log("Я учу JS");
 
-function getGrade(s1, s2, s3) {
-  let total = (s1 + s2 + s3) / 3;
+function sumMix(x) {
+  let total = 0;
 
-  if (total >= 90 && total <= 100) {
-    return "A";
-  } else if (total >= 80 && total < 90) {
-    return "B";
-  } else if (total >= 70 && total < 80) {
-    return "C";
-  } else if (total >= 60 && total < 70) {
-    return "D";
-  } else {
-    return "F";
+  for (const num of x) {
+    let number = Number(num)
+    total += number
   }
+   return total;
 }
+
+
+    sumMix([9, 3, "7", "3"]);
+    sumMix(["5", "0", 9, 3, 2, 1, "9", 6, 7]);
+    sumMix(["3", 6, 6, 0, "5", 8, 5, "6", 2, "0"]);
