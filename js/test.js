@@ -1,22 +1,42 @@
 "use strict";
 
-console.log("Hello world!");
-console.log("Я учу JS");
+// function nbYear(p0, percent, aug, p) {
+//   let element = p0;
+//   let total = 0;
+//   let ourPercent = percent / 100;
+//   let step = p0 * ourPercent + aug;
+//   for (element = p0; element < p; element += step) {
+//     total += 1;
+//   }
+//   console.log(total);
+// }
 
-function validatePIN(pin) {
-  const yes = true;
-  const no = false;
-  const a = /^[0-9]+$/.test(pin);
-  if (a && (pin.length === 4 || pin.length === 6)) {
-    console.log("true");
-  } else {
-    console.log("false");
+// function nbYear(p0, percent, aug, p) {
+
+//   let total = 0;
+//   let ourPercent = percent / 100;
+//   for (var p0; p0 <= p; p0 += p0 * ourPercent + aug) {
+//     total += 1;
+//   }
+//   console.log(total);
+// }
+
+function nbYear(p0, percent, aug, p) {
+  let element = p0;
+  let ourPercent = percent / 100;
+
+  let total = 0;
+  let step = () => element * ourPercent + aug;
+  for (/* no-op */; element < p; element += step()) {
+    total += 1;
   }
+  console.log("total", total);
+  return total;
 }
 
-validatePIN("12345");
-validatePIN("1111");
-validatePIN("1234");
-validatePIN("a234");
 
 
+
+nbYear(1500, 5, 100, 5000); // 15
+nbYear(1500000, 2.5, 10000, 2000000); // 10
+nbYear(1500000, 0.25, 1000, 2000000); // 94
