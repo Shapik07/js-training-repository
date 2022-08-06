@@ -1,16 +1,11 @@
 "use strict";
 
-function squareDigits(num) {
-  let newSum = [];
-  const string = String(num)
-  const number = string.split('')
-  for (const element of number) {
-    newSum.push(Math.pow(element, 2));
-  }
-  const result = Number(newSum.join(""));
-  return result
+function reverseWords(str) {
+  const newStr = str.split(" ").map(function (a) {
+    return a.split("").reverse().join('')
+  }).join(' ')
+
+  console.log(newStr);
 }
 
-
-squareDigits(3212); // 9414
-squareDigits(2112); // 4114
+reverseWords("The quick brown fox jumps over the lazy dog.");
