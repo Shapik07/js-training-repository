@@ -1,13 +1,11 @@
 "use strict";
 
-function removeChar(str){
-  const array = str.split('')
-  const deleteElements = array.slice(1, -1).join('')
-  console.log(deleteElements);
-};
+function opposite(number) {
+  console.log(number === 0 ? 0 : - Math.abs(number))
+}
 
-removeChar("eloquent");
-removeChar("country");
-removeChar("person");
+opposite(1);
+opposite(0);
+opposite(4.25);
 
 
