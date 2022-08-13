@@ -1,18 +1,11 @@
 "use strict";
 
-function opposite(number) {
-  if (number === 0) {
-    console.log(0)
-  } else if (number > 0) {
-    console.log(-Math.abs(number));
-  } else {
-    console.log(Math.abs(number));
-  }
+function isIsogram(str) {
+  const array = str.split("");
 }
 
-opposite(1);
-opposite(0);
-opposite(4.25);
-opposite(-5);
 
+isIsogram("Dermatoglyphics");
+isIsogram("isogram");
+isIsogram("aba");
 
