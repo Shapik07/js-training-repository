@@ -1,0 +1,20 @@
+{
+  "name": "js-training-repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shapik07/js-training-repository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shapik07/js-training-repository/issues"
+  },
+  "homepage": "https://github.com/Shapik07/js-training-repository#readme"
+}
