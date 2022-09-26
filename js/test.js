@@ -1,3 +1,6 @@
 "use strict";
 
-console.log('Привет из Node.js')
+const animals = ['cow', 'cat', 'dog', 'elephant']
+
+console.log(animals.push('horse'))
+console.log(animals.pop())
