@@ -92,21 +92,6 @@ SeriesSum(3);
 // ____________________________________________
 
 function bmi(weight, height) {
-  const imt = weight / (height * height);
-  let result = "";
-  if ((imt <= 18, 5)) {
-    result = "Underweight";
-  } else if (imt <= 25.0) {
-    result = "Normal";
-  } else if (imt <= 30.0) {
-    result = "Overweight";
-  } else {
-    result = "Obese";
-  }
-  console.log(result);
-}
-
-function bmi(weight, height) {
   let bmi = weight / height ** 2;
   let result = "";
   if (bmi < 18.5) {
