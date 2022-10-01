@@ -157,7 +157,6 @@ function isPangram(string) {
     "Z",
   ];
   const array = string.toUpperCase().split("");
-  console.log(array)
   for (let element of alphabet) {
     if (!array.includes(element)) {
       if (element === " ") {
@@ -173,3 +172,13 @@ isPangram("The quick brown fox jumps over the lazy dog");
 isPangram("This is not a pangram");
 
 // ____________________________________________
+
+function duplicateEncode(word) {
+  let newWord = [];
+  const array = word.toLowerCase().split("");
+   console.log(array);
+}
+
+duplicateEncode("din");
+duplicateEncode("recede");
+duplicateEncode("Success");
