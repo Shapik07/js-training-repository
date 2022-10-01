@@ -108,3 +108,68 @@ function bmi(weight, height) {
 bmi(80, 1.8);
 
 // ____________________________________________
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  const result = distanceToPump / mpg === fuelLeft ? true : false;
+  return result;
+};
+
+zeroFuel(50, 25, 2);
+
+// ____________________________________________
+
+function solution(str) {
+  const string = str.split("").reverse().join("");
+  return string;
+}
+
+solution("dlrow");
+
+// ____________________________________________
+
+function isPangram(string) {
+  const alphabet = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
+  const array = string.toUpperCase().split("");
+  console.log(array)
+  for (let element of alphabet) {
+    if (!array.includes(element)) {
+      if (element === " ") {
+        continue;
+      }
+      return false;
+    }
+  }
+  return true;
+}
+
+isPangram("The quick brown fox jumps over the lazy dog");
+isPangram("This is not a pangram");
+
+// ____________________________________________
