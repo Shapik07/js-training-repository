@@ -174,11 +174,18 @@ isPangram("This is not a pangram");
 // ____________________________________________
 
 function duplicateEncode(word) {
-  let newWord = [];
+  let newWord = {};
   const array = word.toLowerCase().split("");
-   console.log(array);
+  array.reduce((acc, letter) => {
+    if (!newWord[letter]) {
+      newWord[letter] = 0;
+    }
+    newWord[letter] += 1;
+  }, newWord);
+
+  const DATA = Object.entries(newWord);
 }
 
 duplicateEncode("din");
 duplicateEncode("recede");
-duplicateEncode("Success");
+// duplicateEncode("Success");
