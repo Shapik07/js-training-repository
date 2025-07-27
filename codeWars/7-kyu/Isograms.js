@@ -6,9 +6,9 @@ function isIsogram(str){
   let result = [];
   
   for(const el of str) {
-    if(!result.includes(el.toLowerCase())) {
-      result.push(el)
-    }
+    
+    !result.includes(el.toLowerCase()) ? result.push(el.toLowerCase()) : null;
+ 
   }
   
   return result.length === str.length ? true : false;
